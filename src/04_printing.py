@@ -21,3 +21,6 @@ print("y is {}".format(y))
 print("z is {}".format(z))
 
 # Finally, print the same thing using an f-string
+print(F"x is {x}")
+print(F"y is {y}")
+print(F"z is {z}")
