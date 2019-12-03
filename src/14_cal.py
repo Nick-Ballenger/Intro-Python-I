@@ -22,3 +22,23 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+args = sys.argv
+arg_length = len(args)
+
+if arg_length == 3:
+  year = int(args[2])
+  month = int(args[1])
+
+if arg_length == 2:
+  month = int(args[1])
+  year = datetime.now().date().year
+
+if arg_length == 1:
+  month = datetime.now().date().month
+  year = datetime.now().date().year
+ 
+
+print(calendar.TextCalendar().formatmonth(year, month)) 
+  
